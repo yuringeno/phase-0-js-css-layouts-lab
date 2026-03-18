@@ -1,4 +1,4 @@
-".cat-container{"
+.cat-container {
 display: flex;
 flex-wrap: wrap;
 justify-content: space-around;
@@ -8,8 +8,8 @@ justify-content: space-around;
 
 
 
-.cat-breed{
-flex: 300px;
+.cat-breed {
+flex: 1 1 300px;
 margin: 1em;
 padding: 1em;
 border: 1px solid #ddd;
@@ -19,22 +19,22 @@ text-align: center;
 transition: transform 0.3s;
 }
 
-.cat-breed img{
+.cat-breed img {
 max-width: 100%;
 height: auto;
 border-radius: 8px;
 }
 
-.cat-breed h3{
-margin: 0.5em;
+.cat-breed h3 {
+margin: 0.5em 0;
 }
 
-.cat-breed p{
+.cat-breed p {
     margin: 0.5em 0 1em;
 }
 
-.cat-container{
-@media screen {
+.cat-container {
+@media (max-width: 768px) {
 flex-direction: column;
 align-items: center;
 flex: 1 1 100%;
@@ -43,7 +43,7 @@ max-width: 100%;
 
 }
 
-.cat-breed{
+.cat-breed:hover {
 transform: scale(1.05);
 }
 
